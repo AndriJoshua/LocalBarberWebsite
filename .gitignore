@@ -1,0 +1,20 @@
+# Folder build/output
+dist/
+build/
+
+# Dependencies
+node_modules/
+
+# Konfigurasi sistem
+.DS_Store
+Thumbs.db
+
+# File log
+*.log
+
+# File lingkungan
+.env
+
+# File IDE/editor
+.vscode/
+.idea/
