@@ -1,0 +1,51 @@
+body {
+    background-image: url('http://localhost/Testci12/public/images/background.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    position: relative;
+    font-family: 'Poppins', sans-serif; 
+}
+.vignette {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle, transparent 30%, rgba(0, 0, 0, 0.8) 100%);
+    pointer-events: none; 
+}
+.navbar {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+.container {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: 20px;
+}
+.centered-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.navbar-nav {
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
+.nav-item + .nav-item {
+    margin-left: 20px;
+}
+
+.btn-animated:hover {
+    background-color: green; /* Ubah warna */
+    color: black;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Tambahkan bayangan */
+    transform: scale(1.05); /* Sedikit perbesar */
+    transition: all 0.3s ease-in-out; /* Animasi halus */
+    transform: scale(1.1);
+    border-color: green;
+}
