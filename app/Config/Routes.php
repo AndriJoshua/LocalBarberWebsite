@@ -15,6 +15,10 @@ $routes->get('/UserLogin', 'UserLogin::index', ['as' => 'user.login']);
 $routes->get('/Home','Home::index');
 $routes->get('/register','UserRegister::index');
 $routes->get('/login','UserLogin::index');
+$routes->post('/loginuser','AuthController::loginuser');
+$routes->get('/dashboard_user','AuthController::dashboard_user');
+$routes->get('/logout','AuthController::logout');
+$routes->get('/UserLogin', 'UserLogin::index');
 //$routes->get('/', 'ImageController::index');
 
 

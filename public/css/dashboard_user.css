@@ -1,0 +1,66 @@
+body {
+    background-image: url('http://localhost/Testci12/public/images/background.jpg');
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+
+/* Navbar styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+}
+
+.navbar .brand {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.navbar .profile {
+    display: flex;
+    align-items: center;
+}
+
+.navbar .profile img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.navbar .profile span {
+    margin-right: 10px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    margin-left: 20px;
+    background-color: #f44336;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+
+/* Content styles */
+.content {
+    flex: 1;
+    padding: 20px;
+}
+
+/* Footer styles */
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: auto;
+}

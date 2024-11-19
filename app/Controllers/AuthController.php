@@ -1,11 +1,13 @@
 <?php
+
 namespace App\Controllers;
 
 use App\Models\UserModel;
 use CodeIgniter\Controller;
 use CodeIgniter\Database\Exceptions\DatabaseException;
 
-class AuthController extends Controller{
+class AuthController extends Controller
+{
     public function storeuser()
     {
         $userModel = new UserModel();
@@ -41,7 +43,7 @@ class AuthController extends Controller{
             return redirect()->back()->withInput()->with('errors', $this->validator->getErrors());
         }
 
-        // Data valid, coba simpan ke database
+        // Data valid mencoba disimpan ke database
         $data = [
             'username' => $this->request->getPost('username'),
             'email'    => $this->request->getPost('email'),
@@ -61,5 +63,66 @@ class AuthController extends Controller{
 
         // Redirect ke halaman sukses
         return redirect()->to('/register')->with('success', 'Registrasi akun berhasil.');
+    }
+
+    public function loginuser()
+    {
+        $userModel = new UserModel();
+
+        // Validasi input
+        if (!$this->validate([
+            'email' => [
+                'rules' => 'required|valid_email',
+                'errors' => [
+                    'required'    => 'Kolom email harus diisi.',
+                    'valid_email' => 'Format email tidak valid.',
+                ],
+            ],
+            'password' => [
+                'rules' => 'required',
+                'errors' => [
+                    'required' => 'Kolom password harus diisi.',
+                ],
+            ],
+        ])) {
+            return redirect()->back()->withInput()->with('errors', $this->validator->getErrors());
+        }
+
+        // Ambil data input
+        $email = $this->request->getPost('email');
+        $password = $this->request->getPost('password');
+
+        // Cari pengguna berdasarkan email
+        $user = $userModel->where('email', $email)->first();
+
+        if (!$user) {
+            // Jika email tidak ditemukan
+            return redirect()->back()->withInput()->with('error', 'Email atau password salah.');
+        }
+
+        // Verifikasi password
+        if (!password_verify($password, $user['password'])) {
+            // Jika password tidak cocok
+            return redirect()->back()->withInput()->with('error', 'Email atau password salah.');
+        }
+
+        // Set sesi pengguna
+        session()->set([
+            'user_id' => $user['id'],
+            'username' => $user['username'],
+            'logged_in' => true,
+        ]);
+
+        // Redirect ke halaman dashboard atau halaman lain
+        return redirect()->to('/dashboard_user')->with('success', 'Login berhasil.');
+    }
+
+    public function dashboard_user(){
+        return view('dashboard_user');
+    }
+
+    public function logout(){
+        session()->destroy();
+        return redirect()->to('/UserLogin');
     }
 }

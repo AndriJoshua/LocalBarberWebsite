@@ -87,7 +87,13 @@
     <div class="container d-flex justify-content-center p-5" style="margin-top: -75px;">
         <div class="login-container col-md-6 col-lg-4">
             <h2 class="text-center mb-4">Login</h2>
-            <form action="<?= base_url('login/process'); ?>" method="POST">
+            <?php if (session('error')): ?>
+                <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                    <?= session('error'); ?>
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+            <?php endif; ?>
+            <form action="/loginuser" method="POST">
                 <div class="mb-3">
                     <label for="email" class="form-label">Email</label>
                     <input type="email" class="form-control" id="email" name="email" placeholder="Masukan Alamat E-Mail" required>
