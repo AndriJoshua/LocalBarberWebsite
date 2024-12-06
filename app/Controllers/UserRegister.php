@@ -4,6 +4,6 @@ namespace App\Controllers;
 
 class UserRegister extends BaseController{
     public function index():string{
-        return view('register');
+        return view('userregis');
     }
 }

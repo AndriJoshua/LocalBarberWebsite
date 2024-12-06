@@ -40,7 +40,7 @@ class AuthController extends Controller
                 ],
             ],
         ])) {
-            return redirect()->back()->withInput()->with('errors', $this->validator->getErrors());
+            return redirect()->to(base_url('register'))->withInput()->with('errors', $this->validator->getErrors());
         }
 
         // Data valid mencoba disimpan ke database
@@ -55,14 +55,14 @@ class AuthController extends Controller
         } catch (DatabaseException $e) {
             // Tangkap error duplicate entry
             if ($e->getCode() == 1062) { // MySQL error code for duplicate entry
-                return redirect()->back()->withInput()->with('error', 'Username atau Email sudah terdaftar.');
+                return redirect()->to('http://localhost:8080/register')->withInput()->with('error', 'Username atau Email sudah terdaftar.');
             }
             // Error lain, tampilkan pesan umum
-            return redirect()->back()->withInput()->with('error', 'Terjadi kesalahan saat menyimpan data. Silakan coba lagi.');
+            return redirect()->to('http://localhost:8080/register')->withInput()->with('error', 'Terjadi kesalahan saat menyimpan data. Silakan coba lagi.');
         }
 
         // Redirect ke halaman sukses
-        return redirect()->to('/register')->with('success', 'Registrasi akun berhasil.');
+        return redirect()->to(base_url('register'))->with('success', 'Registrasi akun berhasil.');
     }
 
     public function loginuser()
@@ -85,7 +85,7 @@ class AuthController extends Controller
                 ],
             ],
         ])) {
-            return redirect()->back()->withInput()->with('errors', $this->validator->getErrors());
+            return redirect()->to(base_url('booking'))->withInput()->with('errors', $this->validator->getErrors());
         }
 
         // Ambil data input
@@ -97,32 +97,49 @@ class AuthController extends Controller
 
         if (!$user) {
             // Jika email tidak ditemukan
-            return redirect()->back()->withInput()->with('error', 'Email atau password salah.');
+            return redirect()->to(base_url('booking'))->withInput()->with('error', 'Email atau password salah.');
         }
 
         // Verifikasi password
         if (!password_verify($password, $user['password'])) {
             // Jika password tidak cocok
-            return redirect()->back()->withInput()->with('error', 'Email atau password salah.');
+            return redirect()->to(base_url('booking'))->withInput()->with('error', 'Email atau password salah.');
         }
 
         // Set sesi pengguna
         session()->set([
             'user_id' => $user['id'],
             'username' => $user['username'],
+            'foto_user' => $user['photo'],
             'logged_in' => true,
+            
         ]);
 
         // Redirect ke halaman dashboard atau halaman lain
-        return redirect()->to('/dashboard_user')->with('success', 'Login berhasil.');
+        return redirect()->to(base_url('dashboard_user'))->with('success', 'Login berhasil.');
     }
 
-    public function dashboard_user(){
+    public function dashboard_user()
+    {
+        // Periksa apakah pengguna sudah login dengan menggunakan sesi yang dikelola oleh CodeIgniter
+        if (!session()->get('logged_in')) {
+            // Jika tidak ada sesi 'logged_in', arahkan ke halaman login
+            return redirect()->to(base_url('booking'));
+        }
+
+        // Jika sudah login, tampilkan halaman dashboard
         return view('dashboard_user');
     }
 
-    public function logout(){
+    public function logout()
+    {
+        // Menghapus semua data sesi
+        session()->remove(['user_id', 'username', 'logged_in']);
+
         session()->destroy();
-        return redirect()->to('/UserLogin');
+
+        // Redirect ke halaman login setelah logout
+        return redirect()->to('http://localhost:8080/booking');
     }
+
 }
