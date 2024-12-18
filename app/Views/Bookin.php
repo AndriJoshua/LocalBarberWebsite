@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -135,6 +137,7 @@
                         <!-- <li><a href="<?= base_url('test#gallery') ?>">Gallery</a></li> -->
                         <li><a href="<?= base_url('test#events') ?>">Events</a></li>
                         <li><a href="<?= base_url('test#contact') ?>">Contact</a></li>
+                        <li><a style="color: red;" href="<?= base_url('admin_login') ?>">Admin</a></li>
                     </ul>
 
                     <!-- /nav -->
@@ -204,7 +207,7 @@
             </div>
         </div>
     </div>
-
+                        
 
 
 
@@ -261,7 +264,6 @@
     <script type="text/javascript" src="js/jquery.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/owl.carousel.min.js"></script>
-
     <script type="text/javascript" src="js/main.js"></script>
 
 </body>

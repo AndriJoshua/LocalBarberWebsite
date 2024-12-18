@@ -22,83 +22,83 @@
 
 
     <style>
-    /* General Styles */
-    body {
-        font-family: 'Poppins', sans-serif;
-    }
+        /* General Styles */
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
 
-    .profile-container {
-        margin-top: 50px;
-        background: #ffffff;
-        padding: 40px;
-        border-radius: 8px;
-        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-    }
+        .profile-container {
+            margin-top: 50px;
+            background: #ffffff;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+        }
 
-    .profile-info {
-        display: flex;
-        align-items: center;
-        gap: 20px;
-    }
-
-    .profile-info img {
-        width: 100px;
-        height: 100px;
-        border-radius: 50%;
-        border: 2px solid black;
-    }
-
-    .profile-info div {
-        flex: 1;
-    }
-
-    .form-control:focus {
-        border-color: #dd1818;
-        box-shadow: 0 0 8px rgba(221, 24, 24, 0.4);
-    }
-
-    .btn-primary {
-        background: #333333;
-        border-color: #333333;
-    }
-
-    .btn-primary:hover {
-        background: #dd1818;
-        border-color: #dd1818;
-    }
-
-    /* Responsive Design */
-    @media (max-width: 768px) {
         .profile-info {
-            flex-direction: column;
+            display: flex;
             align-items: center;
-            text-align: center;
+            gap: 20px;
         }
 
         .profile-info img {
-            margin-bottom: 20px;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            border: 2px solid black;
         }
 
-        .profile-container {
-            padding: 20px;
-        }
-    }
-
-    @media (max-width: 480px) {
-        .profile-container {
-            padding: 15px;
+        .profile-info div {
+            flex: 1;
         }
 
-        .profile-info img {
-            width: 80px;
-            height: 80px;
+        .form-control:focus {
+            border-color: #dd1818;
+            box-shadow: 0 0 8px rgba(221, 24, 24, 0.4);
         }
 
-        .profile-info {
-            gap: 10px;
+        .btn-primary {
+            background: #333333;
+            border-color: #333333;
         }
-    }
-</style>
+
+        .btn-primary:hover {
+            background: #dd1818;
+            border-color: #dd1818;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .profile-info {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+
+            .profile-info img {
+                margin-bottom: 20px;
+            }
+
+            .profile-container {
+                padding: 20px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .profile-container {
+                padding: 15px;
+            }
+
+            .profile-info img {
+                width: 80px;
+                height: 80px;
+            }
+
+            .profile-info {
+                gap: 10px;
+            }
+        }
+    </style>
 
 
 </head>
@@ -179,14 +179,16 @@
                     <h2>Profil</h2>
                     <div class="profile-info" style="display: flex; align-items: center; gap: 20px;">
                         <!-- Foto Profil -->
-                        <img src="<?= base_url(session()->get('photo') ?: '') ?>"
+                        <img src="<?= base_url(session()->get('foto_user') ?: '') ?>"
                             alt=""
                             style="width: 100px; height: 100px; border-radius: 50%; border: 2px solid black;">
 
                         <!-- Informasi User -->
                         <div>
                             <p><strong>Username:</strong> <?= session()->get('username') ?></p>
-                            <p><strong>Email:</strong> <?= session()->get('email') ?></p>
+                            <p><strong>Email:</strong> <?= session()->get('user_email') ?></p>
+                            
+
                         </div>
                     </div>
 

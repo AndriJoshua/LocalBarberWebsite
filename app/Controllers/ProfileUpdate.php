@@ -75,7 +75,6 @@ class ProfileUpdate extends BaseController{
 
             return redirect()->to(base_url('profile'))->with('message', 'Foto berhasil diperbarui.');
         }
-
         return redirect()->to(base_url('profile'))->with('error', 'Gagal mengunggah foto.');
     }
 }

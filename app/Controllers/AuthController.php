@@ -107,13 +107,15 @@ class AuthController extends Controller
         }
 
         // Set sesi pengguna
+        
         session()->set([
             'user_id' => $user['id'],
             'username' => $user['username'],
             'foto_user' => $user['photo'],
+            'user_email' => $user['email'],
             'logged_in' => true,
-            
         ]);
+        
 
         // Redirect ke halaman dashboard atau halaman lain
         return redirect()->to(base_url('dashboard_user'))->with('success', 'Login berhasil.');

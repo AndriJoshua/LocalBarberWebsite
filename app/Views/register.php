@@ -104,7 +104,7 @@
             <?php endif; ?>
 
             <!-- Register Form -->
-            <form method="post" action="/storeuser">
+            <form method="post" action="/api/auth/register">
                 <div class="mb-3">
                     <label for="username" class="form-label">Username</label>
                     <input type="text" class="form-control <?= session('errors.username') ? 'is-invalid' : ''; ?>"
@@ -167,6 +167,37 @@
 <script>
     document.getElementById('backIcon').addEventListener('click', function() {
         history.back();
+    });
+
+    document.querySelector('form').addEventListener('submit', async function (event) {
+        event.preventDefault();
+
+        // Ambil data dari form
+        const formData = new FormData(event.target);
+        const data = Object.fromEntries(formData.entries());
+
+        try {
+            const response = await fetch('/api/auth/register', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(data)
+            });
+
+            const result = await response.json();
+
+            if (response.status === 201) {
+                // Tampilkan pesan sukses
+                alert(result.message);
+                window.location.href = '/login'; // Redirect ke halaman login
+            } else {
+                // Tampilkan error
+                console.log(result);
+                alert('Error: ' + JSON.stringify(result.messages || result.message));
+            }
+        } catch (error) {
+            console.error('Terjadi kesalahan:', error);
+            alert('Terjadi kesalahan saat mengirim data.');
+        }
     });
 </script>
 
