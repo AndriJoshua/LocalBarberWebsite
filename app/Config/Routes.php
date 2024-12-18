@@ -57,6 +57,26 @@ $routes->get('/reservations-crud', 'ReservationApi::crudView');
 
 $routes->post('api/admins', 'AdminController::create');
 
+$routes->get('/admin_login', 'AdminAuthController::login');
+$routes->post('admin/login', 'AdminAuthController::processLogin');
+$routes->get('admin/logout', 'AdminAuthController::logout');
+
+$routes->get('admin/dashboard', function () {
+    if (!session()->get('is_admin_logged_in')) {
+        return redirect()->to(base_url('admin_login'));
+    }
+    return view('admin/dashboard');
+});
+
+// Halaman Dashboard Admin
+$routes->get('admin/dashboard', 'AdminController::dashboard');
+
+// API untuk Reservasi
+$routes->get('admin/api/reservations', 'AdminController::apiReservations');
+$routes->delete('admin/api/reservations/(:num)', 'AdminController::deleteReservation/$1');
+
+
+
 
 
 
