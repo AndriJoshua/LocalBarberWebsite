@@ -25,10 +25,11 @@
                 <tr>
                     <th>No</th>
                     <th>Nama</th>
+                    <th>Email</th>
                     <th>Nomor HP</th>
                     <th>Tanggal</th>
                     <th>Waktu</th>
-                    <th>Email</th>
+                    
                 </tr>
             </thead>
             <tbody>

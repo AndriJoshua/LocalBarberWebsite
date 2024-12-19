@@ -385,7 +385,7 @@
                 </div>
                 <!-- /reservation form -->
 
-                <!-- opening time -->
+                <!-- Jam Operasional -->
                 <div class="col-md-4 col-md-offset-0 col-sm-10 col-sm-offset-1">
                     <div class="opening-time row">
                         <div class="section-header text-center">

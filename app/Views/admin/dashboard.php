@@ -8,6 +8,26 @@
     <link rel="stylesheet" href="<?= base_url('css/bootstrap.min.css') ?>">
     <script src="<?= base_url('js/jquery.min.js') ?>"></script>
     <script src="<?= base_url('js/bootstrap.bundle.min.js') ?>"></script>
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:400,700%7CCabin:400%7CDancing+Script" rel="stylesheet">
+
+    <!-- Bootstrap -->
+    <link type="text/css" rel="stylesheet" href="<?= base_url('css/bootstrap.min.css') ?>" />
+    <!-- Owl Carousel -->
+    <link type="text/css" rel="stylesheet" href="<?= base_url('css/owl.carousel.css') ?>" />
+    <link type="text/css" rel="stylesheet" href="<?= base_url('css/owl.theme.default.css') ?>" />
+    <!-- Custom stylesheet -->
+    <link type="text/css" rel="stylesheet" href="<?= base_url('css/style.css') ?>" />
+    <!-- Font Awesome Icon -->
+    <link rel="stylesheet" href="<?= base_url('css/font-awesome.min.css') ?>">
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <!-- Custom stlylesheet -->
+
+    <!-- Barber Icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
     <style>
         /* Custom navbar styles */
         .navbar {
@@ -52,28 +72,68 @@
 
 <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">Admin Dashboard</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="<?= base_url('admin/reservations') ?>">Daftar Reservasi</a>
-                    </li>
+    <header id="header" style="position: sticky; top: 0; z-index: 1000; background: #fff; padding: 10px 0; border-bottom: 1px solid #ddd;">
+
+        <!-- Top nav -->
+        <div id="top-nav">
+            <div class="container">
+
+                <!-- logo -->
+                <div class="brand-logo" style="color: black;">
+                    <i class="fas fa-scissors fa-2x"></i> LocalBarber
+                </div>
+                <!-- logo -->
+
+                <!-- Mobile toggle -->
+                <button class="navbar-toggle">
+                    <span></span>
+                </button>
+                <!-- Mobile toggle -->
+
+                <!-- social links -->
+                <ul class="social-nav">
+                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
                 </ul>
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="btn btn-danger" href="<?= base_url('admin/logout') ?>">Logout</a>
-                    </li>
-                </ul>
+                <!-- /social links -->
+
             </div>
         </div>
-    </nav>
+        <!-- /Top nav -->
 
+        <!-- Bottom nav -->
+        <div id="bottom-nav">
+            <div class="container">
+                <nav id="nav">
+
+                    <!-- nav -->
+                    <ul class="main-nav nav navbar-nav">
+                        <li><a href="<?= base_url('/admin/dashboard') ?>">Daftar_reservasi</a></li>
+                    </ul>
+
+                    <!-- /nav -->
+
+                    <!-- button nav -->
+                    <ul class="cta-nav">
+                        <li><a href="<?= base_url('admin/logout'); ?>" class="main-button">Logout</a></li>
+                    </ul>
+                    <!-- button nav -->
+
+                    <!-- contact nav -->
+                    <ul class="contact-nav nav navbar-nav">
+                        <li><a href="tel:0455481497"><i class="fa fa-phone"></i> 0812-2222-2222</a></li>
+                        <li><a href="#"><i class="fa fa-map-marker"></i>Jalan Basuki Rahmat</a></li>
+                    </ul>
+                    <!-- contact nav -->
+
+                </nav>
+            </div>
+        </div>
+        <!-- /Bottom nav -->
+
+
+    </header>
     <!-- Main Content -->
     <div class="container mt-5">
         <h2 class="text-center">Daftar Reservasi</h2>
@@ -97,12 +157,12 @@
 
     <!-- Script untuk CRUD -->
     <script>
-        $(document).ready(function () {
+        $(document).ready(function() {
             const baseUrl = "<?= base_url() ?>";
 
             // Fetch all reservations
             function fetchReservations() {
-                $.get(`${baseUrl}/admin/api/reservations`, function (data) {
+                $.get(`${baseUrl}/admin/api/reservations`, function(data) {
                     let rows = "";
                     data.forEach((reservation, index) => {
                         rows += `
@@ -124,12 +184,12 @@
             }
 
             // Delete a reservation
-            window.deleteReservation = function (id) {
+            window.deleteReservation = function(id) {
                 if (confirm("Yakin ingin menghapus reservasi ini?")) {
                     $.ajax({
                         url: `${baseUrl}/admin/api/reservations/${id}`,
                         type: "DELETE",
-                        success: function () {
+                        success: function() {
                             alert("Reservasi berhasil dihapus");
                             fetchReservations();
                         }
@@ -141,6 +201,11 @@
             fetchReservations();
         });
     </script>
+    
+    <script type="text/javascript" src="<?= base_url('js/jquery.min.js') ?>"></script>
+    <script type="text/javascript" src="<?= base_url('js/bootstrap.min.js') ?>"></script>
+    <script type="text/javascript" src="<?= base_url('js/owl.carousel.min.js') ?>"></script>
+    <script type="text/javascript" src="<?= base_url('js/main.js') ?>"></script>
 </body>
 
 </html>

@@ -127,7 +127,7 @@
                     <h1 class="white-text">Selamat Datang Di LocalBarber</h1>
                     <h4 class="white-text lead" style="font-family:'Poppins',sans-serif;">Tempat terbaik untuk gaya rambut modern,
                         perawatan premium, dan pengalaman santai yang membuat Anda tampil percaya diri setiap hari!</h4>
-                    <a href="index.html#menu"><button class="main-button">Discover Menu</button></a>
+                    <a href="test#menu"><button class="main-button">Discover Model</button></a>
                 </div>
             </div>
 
@@ -154,7 +154,7 @@
 
                 <!-- about content -->
                 <div class="col-md-5">
-                    <h4 class="lead">Welcome to Risotto Restaurant. Since 1988, Offering Traditional Dishes of the highest quality.</h4>
+                    <h4 class="lead">Selamat Datang di lokalbarber.Berdiri sejak 2010 Tempat terbaik untuk gaya rambut modern, perawatan premium, dan pengalaman santai yang membuat Anda tampil percaya diri setiap hari!.</h4>
                 </div>
                 <!-- /about content -->
 
@@ -163,66 +163,6 @@
                     <p>Te sit stet labitur veritus, sea similique consetetur ut. Ne fastidii oportere usu. Iusto mediocrem iudicabit ea eos, nemore offendit detraxit ei cum. Oblique conclusionemque qui cu, eum no sonet putant. Eos cu nulla vidisse. Mazim oporteat eam ex, his ei audiam audire, affert corrumpit pri cu.</p>
                 </div>
                 <!-- /about content -->
-
-                <!-- Gallery Slider -->
-                <div class="col-md-12">
-                    <div id="Gallery" class="owl-carousel owl-theme">
-
-                        <!-- single column -->
-                        <div class="Gallery-item">
-
-                            <!-- single image -->
-                            <div class="Gallery-img" style="background-image:url(./img/image01.jpg)"></div>
-                            <!-- /single image -->
-
-                        </div>
-                        <!-- single column -->
-
-                        <!-- single column -->
-                        <div class="Gallery-item">
-
-                            <!-- single image -->
-                            <div class="Gallery-img" style="background-image:url(./img/image02.jpg)"></div>
-                            <!-- /single image -->
-
-                            <!-- single image -->
-                            <div class="Gallery-img" style="background-image:url(./img/image03.jpg)"></div>
-                            <!-- /single image -->
-
-                        </div>
-                        <!-- single column -->
-
-                        <!-- single column -->
-                        <div class="Gallery-item">
-
-                            <div class="item-column">
-                                <!-- single image -->
-                                <div class="Gallery-img" style="background-image:url(./img/image04.jpg)"></div>
-                                <!-- /single image -->
-
-                                <!-- single image -->
-                                <div class="Gallery-img" style="background-image:url(./img/image05.jpg)"></div>
-                                <!-- /single image -->
-                            </div>
-
-                            <div class="item-column">
-                                <!-- single image -->
-                                <div class="Gallery-img" style="background-image:url(./img/image06.jpg)"></div>
-                                <!-- /single image -->
-
-                                <!-- single image -->
-                                <div class="Gallery-img" style="background-image:url(./img/image07.jpg)"></div>
-                                <!-- /single image -->
-                            </div>
-
-                        </div>
-                        <!-- /single column -->
-
-                    </div>
-                </div>
-                <!-- /Gallery Slider -->
-
-
             </div>
             <!-- /row -->
 
@@ -248,15 +188,12 @@
 
                 <div class="section-header text-center">
                     <h4 class="sub-title">Discover</h4>
-                    <h2 class="title white-text">Our Menu</h2>
+                    <h2 class="title white-text">Potongan Rambut</h2>
                 </div>
 
                 <!-- menu nav -->
                 <ul class="menu-nav">
-                    <li class="active"><a data-toggle="tab" href="#menu1">Dinner</a></li>
-                    <li><a data-toggle="tab" href="#menu1">Drinks</a></li>
-                    <li><a data-toggle="tab" href="#menu1">Launch</a></li>
-                    <li><a data-toggle="tab" href="#menu1">Dessert</a></li>
+                    <li class="active"><a data-toggle="tab" href="#menu1">Model</a></li>
                 </ul>
                 <!-- /menu nav -->
 
@@ -270,50 +207,55 @@
                             <!-- single dish -->
                             <div class="single-dish">
                                 <div class="single-dish-heading">
-                                    <h4 class="name">Basted Rhubarb Mussels</h4>
-                                    <h4 class="price">57£</h4>
+                                    <h4 class="name">Undercut</h4>
+                                    <h4 class="price">Rp30.000</h4>
                                 </div>
-                                <p>te vero tritani iuvaret vis. Nec odio periculis adipiscing an.</p>
+                                <p>Rambut bagian atas dibiarkan lebih panjang, sementara bagian samping dan belakang dicukur pendek.
+                                    Cocok untuk tampilan modern dan edgy..</p>
                             </div>
                             <!-- /single dish -->
 
                             <!-- single dish -->
                             <div class="single-dish">
                                 <div class="single-dish-heading">
-                                    <h4 class="name">Steamed Chili Moussaka</h4>
-                                    <h4 class="price">145£</h4>
+                                    <h4 class="name">Pompadour</h4>
+                                    <h4 class="price">Rp30.000</h4>
                                 </div>
-                                <p>te vero tritani iuvaret vis. Nec odio periculis adipiscing an.</p>
+                                <p>Rambut bagian atas ditata tinggi ke belakang menggunakan pomade, sementara sisi rambut dipotong lebih pendek.
+                                    Tampilan klasik dan elegan..</p>
                             </div>
                             <!-- /single dish -->
 
                             <!-- single dish -->
                             <div class="single-dish">
                                 <div class="single-dish-heading">
-                                    <h4 class="name">Blanched Fennel & Orange Lasagna</h4>
-                                    <h4 class="price">79£</h4>
+                                    <h4 class="name">Crew Cut</h4>
+                                    <h4 class="price">Rp30.000</h4>
                                 </div>
-                                <p>te vero tritani iuvaret vis. Nec odio periculis adipiscing an.</p>
+                                <p>Rambut bagian atas dipotong pendek tetapi sedikit lebih panjang dari buzz cut, dengan sisi lebih pendek.
+                                    Memberikan tampilan rapi dan profesional.</p>
                             </div>
                             <!-- /single dish -->
 
                             <!-- single dish -->
                             <div class="single-dish">
                                 <div class="single-dish-heading">
-                                    <h4 class="name">Slow-Cooked Basil & Lime Ostrich</h4>
-                                    <h4 class="price">57£</h4>
+                                    <h4 class="name">Fade</h4>
+                                    <h4 class="price">Rp30.000</h4>
                                 </div>
-                                <p>te vero tritani iuvaret vis. Nec odio periculis adipiscing an.</p>
+                                <p>Rambut memudar secara bertahap dari atas ke bawah, mulai dari tebal hingga hampir habis di bagian bawah.
+                                    Variasi: Low Fade, Mid Fade, High Fade, Skin Fade.</p>
                             </div>
                             <!-- /single dish -->
 
                             <!-- single dish -->
                             <div class="single-dish">
                                 <div class="single-dish-heading">
-                                    <h4 class="name">Stuffed Oregano Chicken</h4>
-                                    <h4 class="price">145£</h4>
+                                    <h4 class="name">Buzz Cut</h4>
+                                    <h4 class="price">Rp30.000</h4>
                                 </div>
-                                <p>te vero tritani iuvaret vis. Nec odio periculis adipiscing an.</p>
+                                <p>Potongan rambut sangat pendek, biasanya menggunakan clipper dengan panjang yang sama.
+                                    Mudah dirawat dan cocok untuk tampilan minimalis.</p>
                             </div>
                             <!-- /single dish -->
 
@@ -324,50 +266,53 @@
                             <!-- single dish -->
                             <div class="single-dish">
                                 <div class="single-dish-heading">
-                                    <h4 class="name">Pressure-Fried Asparagus Chicken</h4>
-                                    <h4 class="price">57£</h4>
+                                    <h4 class="name">French Crop</h4>
+                                    <h4 class="price">Rp30.000</h4>
                                 </div>
-                                <p>te vero tritani iuvaret vis. Nec odio periculis adipiscing an.</p>
+                                <p>Bagian atas rambut dipotong pendek dengan poni depan pendek, sementara sisi rambut dipotong rapi.
+                                    Tampilan modern yang mudah dirawat.</p>
                             </div>
                             <!-- /single dish -->
 
                             <!-- single dish -->
                             <div class="single-dish">
                                 <div class="single-dish-heading">
-                                    <h4 class="name">Tenderized Egg & Coconut Duck</h4>
-                                    <h4 class="price">87£</h4>
+                                    <h4 class="name">Quiff</h4>
+                                    <h4 class="price">Rp30.000</h4>
                                 </div>
-                                <p>te vero tritani iuvaret vis. Nec odio periculis adipiscing an.</p>
+                                <p>Mirip pompadour, tetapi dengan gaya lebih kasual. Rambut ditata tinggi di bagian depan dan lebih santai di bagian belakang.</p>
                             </div>
                             <!-- /single dish -->
 
                             <!-- single dish -->
                             <div class="single-dish">
                                 <div class="single-dish-heading">
-                                    <h4 class="name">Milk Chocolate Gingerbread</h4>
-                                    <h4 class="price">155£</h4>
+                                    <h4 class="name">Man Bun</h4>
+                                    <h4 class="price">Rp30.000</h4>
                                 </div>
-                                <p>te vero tritani iuvaret vis. Nec odio periculis adipiscing an.</p>
+                                <p>Rambut panjang yang dikuncir menjadi bun di bagian belakang kepala.
+                                    Cocok untuk pria dengan rambut panjang.</p>
                             </div>
                             <!-- /single dish -->
 
                             <!-- single dish -->
                             <div class="single-dish">
                                 <div class="single-dish-heading">
-                                    <h4 class="name">Simmered Mango & Pine Rabbit</h4>
-                                    <h4 class="price">57£</h4>
+                                    <h4 class="name">Mullet</h4>
+                                    <h4 class="price">Rp30.000</h4>
                                 </div>
-                                <p>te vero tritani iuvaret vis. Nec odio periculis adipiscing an.</p>
+                                <p>Rambut bagian depan dan samping pendek, sementara bagian belakang dibiarkan panjang.
+                                    Kesan retro yang kembali populer.</p>
                             </div>
                             <!-- /single dish -->
 
                             <!-- single dish -->
                             <div class="single-dish">
                                 <div class="single-dish-heading">
-                                    <h4 class="name">Red Wine Surprise</h4>
-                                    <h4 class="price">87£</h4>
+                                    <h4 class="name">Taper Cut</h4>
+                                    <h4 class="price">Rp30.000</h4>
                                 </div>
-                                <p>te vero tritani iuvaret vis. Nec odio periculis adipiscing an.</p>
+                                <p>Rambut bagian atas panjang, secara bertahap menjadi lebih pendek ke bawah..</p>
                             </div>
                             <!-- /single dish -->
 
@@ -403,110 +348,96 @@
 
                 <!-- reservation form -->
                 <div class="col-md-6 col-md-offset-1 col-sm-10 col-sm-offset-1">
-                    <form class="reserve-form row">
+                    <form class="reserve-form row" method="POST" action="<?= base_url('/reservations/store') ?>">
                         <div class="section-header text-center">
                             <h4 class="sub-title">Reservation</h4>
-                            <h2 class="title white-text">Book Your Table</h2>
+                            <h2 class="title white-text">Buat Reservasi</h2>
                         </div>
 
                         <div class="col-md-6">
                             <div class="form-group">
-                                <label for="name">Name:</label>
-                                <input class="input" type="text" placeholder="Name" id="name">
+                                <label for="name">Nama:</label>
+                                <input class="input" type="text" placeholder="Name" id="name" name="name" required>
                             </div>
                             <div class="form-group">
-                                <label for="phone">Phone:</label>
-                                <input class="input" type="tel" placeholder="Phone" id="phone">
+                                <label for="phone">Nomor Hp:</label>
+                                <input class="input" type="tel" placeholder="Phone" id="phone" name="phone" required>
                             </div>
                             <div class="form-group">
-                                <label for="date">Date:</label>
-                                <input class="input" type="text" placeholder="MM/DD/YYYY" id="date">
+                                <label for="date">Tanggal:</label>
+                                <input class="input" type="date" id="date" name="date" required>
                             </div>
                         </div>
 
                         <div class="col-md-6">
                             <div class="form-group">
-                                <label for="email">Email:</label>
-                                <input class="input" type="email" placeholder="Email" id="email">
-                            </div>
-                            <div class="form-group">
-                                <label for="number">Number of Guests:</label>
-                                <select class="input" id="number">
-                                    <option>1 Person</option>
-                                    <option>2 People</option>
-                                    <option>3 People</option>
-                                    <option>4 People</option>
-                                    <option>5 People</option>
-                                    <option>6 People</option>
-                                </select>
-                            </div>
-                            <div class="form-group">
-                                <label for="time">Time:</label>
-                                <input class="input" type="text" placeholder="HH:MM" id="time">
+                                <label for="time">Waktu:</label>
+                                <input class="input" type="time" id="time" name="time" required>
                             </div>
                         </div>
 
-                        <<div class="col-md-12 text-center">
-                            <a href="<?= base_url('booking'); ?>" class="main-button">Book Now</a>
+                        <div class="col-md-12 text-center">
+                            <a href="<?= base_url('booking'); ?>" class="main-button">Pesan Sekarang</a>
+                        </div>
+
+
+
+                    </form>
                 </div>
+                <!-- /reservation form -->
 
-
-
-                </form>
-            </div>
-            <!-- /reservation form -->
-
-            <!-- opening time -->
-            <div class="col-md-4 col-md-offset-0 col-sm-10 col-sm-offset-1">
-                <div class="opening-time row">
-                    <div class="section-header text-center">
-                        <h2 class="title white-text">Opening Time</h2>
+                <!-- opening time -->
+                <!-- Jam Operasional -->
+                <div class="col-md-4 col-md-offset-0 col-sm-10 col-sm-offset-1">
+                    <div class="opening-time row">
+                        <div class="section-header text-center">
+                            <h2 class="title white-text">Jam Operasional</h2>
+                        </div>
+                        <ul>
+                            <li>
+                                <h4 class="day">Minggu</h4>
+                                <h4 class="hours">8:00 am – 11:00 pm</h4>
+                            </li>
+                            <li>
+                                <h4 class="day">Senin</h4>
+                                <h4 class="hours">8:00 am – 11:00 pm</h4>
+                            </li>
+                            <li>
+                                <h4 class="day">Selasa</h4>
+                                <h4 class="hours">8:00 am – 11:00 pm</h4>
+                            </li>
+                            <li>
+                                <h4 class="day">Rabu</h4>
+                                <h4 class="hours">8:00 am – 11:00 pm</h4>
+                            </li>
+                            <li>
+                                <h4 class="day">Kamis</h4>
+                                <h4 class="hours">8:00 am – 11:00 pm</h4>
+                            </li>
+                            <li>
+                                <h4 class="day">Jumat</h4>
+                                <h4 class="hours">8:00 am – 11:00 pm</h4>
+                            </li>
+                            <li>
+                                <h4 class="day">Sabtu</h4>
+                                <h4 class="hours">8:00 am – 9:00 pm</h4>
+                            </li>
+                        </ul>
                     </div>
-                    <ul>
-                        <li>
-                            <h4 class="day">Sunday</h4>
-                            <h4 class="hours">8:00 am – 11:00 pm</h4>
-                        </li>
-                        <li>
-                            <h4 class="day">Monday</h4>
-                            <h4 class="hours">8:00 am – 11:00 pm</h4>
-                        </li>
-                        <li>
-                            <h4 class="day">Tuesday</h4>
-                            <h4 class="hours">8:00 am – 11:00 pm</h4>
-                        </li>
-                        <li>
-                            <h4 class="day">Wednesday</h4>
-                            <h4 class="hours">8:00 am – 11:00 pm</h4>
-                        </li>
-                        <li>
-                            <h4 class="day">Thursday</h4>
-                            <h4 class="hours">8:00 am – 11:00 pm</h4>
-                        </li>
-                        <li>
-                            <h4 class="day">Friday</h4>
-                            <h4 class="hours">Closed</h4>
-                        </li>
-                        <li>
-                            <h4 class="day">Saturday</h4>
-                            <h4 class="hours">Closed</h4>
-                        </li>
-                    </ul>
                 </div>
+                <!-- /opening time -->
+
             </div>
-            <!-- /opening time -->
+            <!-- /row -->
 
         </div>
-        <!-- /row -->
-
-    </div>
-    <!-- /container -->
+        <!-- /container -->
 
     </div>
     <!-- /Reservation -->
 
     <!-- Events -->
-    
+
     <!-- /Events -->
 
     <!-- Contact -->
@@ -520,14 +451,14 @@
 
                 <div class="col-md-5 col-md-offset-7">
                     <div class="section-header">
-                        <h4 class="sub-title">Contact Us</h4>
-                        <h2 class="title">Get In Touch</h2>
+                        <h4 class="sub-title">Hubungi Kami</h4>
+                        <h2 class="title">!!!</h2>
                     </div>
                     <div class="contact-content">
-                        <p>Te sit stet labitur veritus, sea similique consetetur ut. Ne fastidii oportere usu. Iusto mediocrem iudicabit ea eos, nemore offendit detraxit ei cum.</p>
+                        <p>Untuk informasi lebih lanjut silahkan hubugi kami</p>
                         <h3>Tel: <a href="#">045-548-14-97</a></h3>
-                        <p>Address: 3685 Granville Lane</p>
-                        <p>Email: <a href="#">Risotto@email.com</a></p>
+                        <p>Alamat : Jalan Basuki Rahmat</p>
+                        <p>Email: <a href="#">Localbarber@email.com</a></p>
                         <ul class="list-inline">
                             <li>
                                 <p>Follow Us:</p>
