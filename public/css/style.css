@@ -142,9 +142,9 @@ textarea.input {
 	border-radius: 20px;
 }
 
-/*------------------------------------*\
+/*
 	Navigation
-\*------------------------------------*/
+*/
 #header {
 	position:absolute;
 	left:0;
@@ -432,9 +432,9 @@ textarea.input {
             transform: translateY(-10px) rotate(-45deg);
 }
 
-/*------------------------------------*\
+/*
 	Home
-\*------------------------------------*/
+*/
 .banner-area {
 	position:relative;
 	padding-bottom:40px;
@@ -458,9 +458,9 @@ textarea.input {
 	font-family: 'Dancing Script', cursive;
 }
 
-/*------------------------------------*\
+/*
 	About
-\*------------------------------------*/
+*/
 #Gallery {
 	margin-top:40px;
 }
@@ -540,10 +540,10 @@ textarea.input {
     right: -70px;
 }
 
-/*------------------------------------*\
+/*
 	Menu
-\*------------------------------------*/
-/* --- menu nav --- */
+*/
+
 .menu-nav {
 	text-align: center;
 }
@@ -636,9 +636,9 @@ textarea.input {
 	color:#f36700;
 }
 
-/*------------------------------------*\
+/*
 	Reservation
-\*------------------------------------*/
+*/
 #reservation.section {
 	padding-bottom:0px;
 }
@@ -665,9 +665,9 @@ textarea.input {
 	border-color: rgba(255, 255, 255, 0.2);
 }
 
-/*------------------------------------*\
+/*
 	Opening Time
-\*------------------------------------*/
+*/
 .opening-time {
 	padding: 40px 8% 40px;
 	background: #151515;
@@ -688,9 +688,9 @@ textarea.input {
 	color:#f36500;
 }
 
-/*------------------------------------*\
+/*
 	Events
-\*------------------------------------*/
+*/
 .event {
 	position:relative;
 	margin:15px 0px;
@@ -758,9 +758,9 @@ textarea.input {
 	margin-top:0px;
 }
 
-/*------------------------------------*\
+/*
 	Contact
-\*------------------------------------*/
+*/
 #contact #map {
 	position:absolute;
 	top:0;
@@ -769,9 +769,9 @@ textarea.input {
 	width:50%;
 }
 
-/*------------------------------------*\
+/*
 	Footer
-\*------------------------------------*/
+*/
 #footer {
 	padding-top:40px;
 	padding-bottom:40px;
@@ -794,9 +794,9 @@ textarea.input {
 	color:#f36500;
 }
 
-/*------------------------------------*\
+/*
 	Blog Post
-\*------------------------------------*/
+*/
 .blog-img {
 	position:relative;
 }
@@ -1007,9 +1007,9 @@ textarea.input {
 	color: #F9F9F9;
 }
 
-/*------------------------------------*\
+/*
 	Responsive
-\*------------------------------------*/
+*/
 
 @media only screen and (max-width: 1201px) {
 	/* --- contact nav --- */
@@ -1124,9 +1124,9 @@ textarea.input {
 	}
 }
 
-/*------------------------------------*\
+/*
 	Preloader
-\*------------------------------------*/
+-*/
 #preloader {
 	position:fixed;
 	left:0;
