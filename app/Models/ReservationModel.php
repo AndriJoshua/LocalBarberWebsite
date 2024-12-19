@@ -8,5 +8,5 @@ class ReservationModel extends Model
 {
     protected $table = 'reservations';
     protected $primaryKey = 'id';
-    protected $allowedFields = ['name', 'phone', 'date', 'time', 'email'];
+    protected $allowedFields = ['name', 'phone', 'date', 'time', 'email','status'];
 }
