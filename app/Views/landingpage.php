@@ -79,9 +79,8 @@
                     <ul class="main-nav nav navbar-nav">
                         <li><a href="<?= base_url('test') ?>">Home</a></li>
                         <li><a href="<?= base_url('test#about') ?>">About</a></li>
-                        <li><a href="<?= base_url('test#menu') ?>">Menu</a></li>
+                        <li><a href="<?= base_url('test#menu') ?>">Pricelist</a></li>
                         <li><a href="<?= base_url('test#reservation') ?>">Reservation</a></li>
-                        <!-- <li><a href="<?= base_url('test#gallery') ?>">Gallery</a></li> -->
                         <li><a href="<?= base_url('test#model') ?>">Model</a></li>
                         <li><a href="<?= base_url('test#contact') ?>">Contact</a></li>
                     </ul>
@@ -122,7 +121,7 @@
                     <h1 class="white-text">Selamat Datang Di LocalBarber</h1>
                     <h4 class="white-text lead" style="font-family:'Poppins',sans-serif;">Tempat terbaik untuk gaya rambut modern,
                         perawatan premium, dan pengalaman santai yang membuat Anda tampil percaya diri setiap hari!</h4>
-                    <a href="test#menu"><button class="main-button">Discover Model</button></a>
+                    <a href="test#menu"><button class="main-button">Lanjut</button></a>
                 </div>
             </div>
 
@@ -142,7 +141,7 @@
 
                 <!-- section header -->
                 <div class="section-header text-center">
-                    <h4 class="sub-title">About Us</h4>
+                    <h4 class="sub-title">Tentang Kami</h4>
                     <h2 class="title">LocalBarber</h2>
                 </div>
                 <!-- /section header -->
@@ -182,8 +181,7 @@
             <div class="row">
 
                 <div class="section-header text-center">
-                    <h4 class="sub-title">Discover</h4>
-                    <h2 class="title white-text">Potongan Rambut</h2>
+                    <h2 class="title white-text">Pricelist</h2>
                 </div>
 
                 <!-- menu nav -->
@@ -400,7 +398,7 @@
 
         <!-- section header -->
         <div class="section-header text-center">
-            <h4 class="sub-title">Explore</h4>
+            <h4 class="sub-title">Jelajahi</h4>
             <h2 class="title white-text">Model Rambut</h2>
         </div>
         <!-- /section header -->
@@ -409,48 +407,42 @@
         <div class="col-md-4">
             <div class="model-box">
                 <img src="./img/model01.jpeg" alt="Model Rambut 1" class="img-responsive">
-                <h4 class="model-name">Pompadour</h4>
-                <p>Gaya klasik dengan volume rambut di bagian atas yang cocok untuk tampilan formal maupun santai.</p>
+                <h4 class="model-name">Mini Hight-Fade</h4>
             </div>
         </div>
 
         <div class="col-md-4">
             <div class="model-box">
                 <img src="./img/model02.jpeg" alt="Model Rambut 2" class="img-responsive">
-                <h4 class="model-name">Undercut</h4>
-                <p>Potongan modern dengan sisi yang tipis dan bagian atas rambut yang lebih panjang.</p>
+                <h4 class="model-name">French Crop</h4>
             </div>
         </div>
 
         <div class="col-md-4">
             <div class="model-box">
                 <img src="./img/model03.jpeg" alt="Model Rambut 3" class="img-responsive">
-                <h4 class="model-name">Fade Cut</h4>
-                <p>Potongan dengan gradasi yang rapi, memberikan tampilan stylish dan bersih.</p>
+                <h4 class="model-name">Two Block</h4>
             </div>
         </div>
 
         <div class="col-md-4">
             <div class="model-box">
                 <img src="./img/model04.jpeg" alt="Model Rambut 3" class="img-responsive">
-                <h4 class="model-name">Fade Cut</h4>
-                <p>Potongan dengan gradasi yang rapi, memberikan tampilan stylish dan bersih.</p>
+                <h4 class="model-name">Bowl Cut</h4>
             </div>
         </div>
 
         <div class="col-md-4">
             <div class="model-box">
                 <img src="./img/model05.jpeg" alt="Model Rambut 3" class="img-responsive">
-                <h4 class="model-name">Fade Cut</h4>
-                <p>Potongan dengan gradasi yang rapi, memberikan tampilan stylish dan bersih.</p>
+                <h4 class="model-name">Short Spikes</h4>
             </div>
         </div>
 
         <div class="col-md-4">
             <div class="model-box">
                 <img src="./img/model06.png" alt="Model Rambut 3" class="img-responsive">
-                <h4 class="model-name">Fade Cut</h4>
-                <p>Potongan dengan gradasi yang rapi, memberikan tampilan stylish dan bersih.</p>
+                <h4 class="model-name">Texture Fringe</h4>
             </div>
         </div>
         <!-- /model content -->
@@ -480,7 +472,7 @@
                     </div>
                     <div class="contact-content">
                         <p>Sejak 2017, Local Barber telah menjadi barbershop pilihan dengan layanan profesional, potongan modern, dan pengalaman nyaman untuk pria yang ingin tampil percaya diri.</p>
-                        <h3>Telepon: <a href="#">0812-2222-2222</a></h3>
+                        <h4>Telepon: <a href="#">0812-2222-2222</a></h4>
                         <p>Alamat : Jalan Basuki Rahmat No.12</p>
                         <p>Email: <a href="#">Localbarber@email.com</a></p>
                         <ul class="list-inline">
@@ -527,16 +519,16 @@
                 <!-- /copyright -->
 
                 <!-- footer nav -->
-                <div class="col-md-6">
+                <!-- <div class="col-md-6">
                     <nav class="footer-nav">
                         <a href="index.html">Home</a>
                         <a href="index.html#about">About</a>
-                        <a href="index.html#menu">Menu</a>
+                        <a href="index.html#menu">Pricelist</a>
                         <a href="index.html#reservation">Reservation</a>
                         <a href="index.html#events">Model</a>
                         <a href="index.html#contact">Contact</a>
                     </nav>
-                </div>
+                </div> -->
                 <!-- /footer nav -->
 
             </div>

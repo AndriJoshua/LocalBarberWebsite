@@ -72,12 +72,12 @@
             <div class="container">
                 <nav id="nav">
                     <ul class="main-nav nav navbar-nav">
-                        <li><a href="<?= base_url('dashboard_user') ?>">Home</a></li>
-                        <li><a href="<?= base_url('dashboard_user#about') ?>">About</a></li>
-                        <li><a href="<?= base_url('dashboard_user#menu') ?>">Menu</a></li>
-                        <li><a href="<?= base_url('dashboard_user#reservation') ?>">Reservation</a></li>
-                        <li><a href="<?= base_url('dashboard_user#events') ?>">Model</a></li>
-                        <li><a href="<?= base_url('dashboard_user#contact') ?>">Contact</a></li>
+                        <li><a href="<?= base_url('test') ?>">Home</a></li>
+                        <li><a href="<?= base_url('test#about') ?>">About</a></li>
+                        <li><a href="<?= base_url('test#menu') ?>">Pricelist</a></li>
+                        <li><a href="<?= base_url('test#reservation') ?>">Reservation</a></li>
+                        <li><a href="<?= base_url('test#model') ?>">Model</a></li>
+                        <li><a href="<?= base_url('test#contact') ?>">Contact</a></li>
                     </ul>
 
                     <!-- User Profile dan Logout -->
@@ -136,7 +136,7 @@
 
                 <!-- section header -->
                 <div class="section-header text-center">
-                    <h4 class="sub-title">About Us</h4>
+                    <h4 class="sub-title">Tentang Kami</h4>
                     <h2 class="title">LocalBarber</h2>
                 </div>
                 <!-- /section header -->
@@ -178,7 +178,7 @@
             <!-- row -->
             <div class="row">
 
-            <div class="section-header text-center">
+                <div class="section-header text-center">
                     <h4 class="sub-title">Discover</h4>
                     <h2 class="title white-text">Potongan Rambut</h2>
                 </div>
@@ -256,7 +256,7 @@
                                     <h4 class="name">Colouring + Haircut</h4>
                                     <h4 class="price">Rp80.000</h4>
                                 </div>
-                                <p>Potong rambut + warna rambut +  cuci rambut + shampo + head massage + facial cream + hot towel</p>
+                                <p>Potong rambut + warna rambut + cuci rambut + shampo + head massage + facial cream + hot towel</p>
                             </div>
                             <!-- /single cut -->
 
@@ -350,7 +350,7 @@
                             <h2 class="title white-text">Jam Operasional</h2>
                         </div>
                         <ul>
-                        <li>
+                            <li>
                                 <h4 class="day">Senin</h4>
                                 <h4 class="hours">10:00 am – 7:00 pm</h4>
                             </li>
@@ -392,9 +392,81 @@
     </div>
     <!-- /Reservation -->
 
-    <!-- Events -->
 
-    <!-- /Events -->
+    <!-- Model Section -->
+    <div id="model" class="section">
+
+        <!-- Background Image -->
+        <div class="bg-image bg-parallax overlay" style="background-image:url(./img/background04.jpg)"></div>
+        <!-- /Background Image -->
+
+        <!-- container -->
+        <div class="container">
+
+            <!-- row -->
+            <div class="row">
+
+                <!-- section header -->
+                <div class="section-header text-center">
+                    <h4 class="sub-title">Jelajahi</h4>
+                    <h2 class="title white-text">Model Rambut</h2>
+                </div>
+                <!-- /section header -->
+
+                <!-- model content -->
+                <div class="col-md-4">
+                    <div class="model-box">
+                        <img src="./img/model01.jpeg" alt="Model Rambut 1" class="img-responsive">
+                        <h4 class="model-name">Mini Hight-Fade</h4>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="model-box">
+                        <img src="./img/model02.jpeg" alt="Model Rambut 2" class="img-responsive">
+                        <h4 class="model-name">French Crop</h4>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="model-box">
+                        <img src="./img/model03.jpeg" alt="Model Rambut 3" class="img-responsive">
+                        <h4 class="model-name">Two Block</h4>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="model-box">
+                        <img src="./img/model04.jpeg" alt="Model Rambut 3" class="img-responsive">
+                        <h4 class="model-name">Bowl Cut</h4>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="model-box">
+                        <img src="./img/model05.jpeg" alt="Model Rambut 3" class="img-responsive">
+                        <h4 class="model-name">Short Spikes</h4>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="model-box">
+                        <img src="./img/model06.png" alt="Model Rambut 3" class="img-responsive">
+                        <h4 class="model-name">Texture Fringe</h4>
+                    </div>
+                </div>
+                <!-- /model content -->
+
+            </div>
+            <!-- /row -->
+
+        </div>
+        <!-- /container -->
+
+    </div>
+    <!-- /Model Section -->
+
+
 
     <!-- Contact -->
     <div id="contact" class="section">
@@ -406,7 +478,7 @@
             <div class="row">
 
                 <div class="col-md-5 col-md-offset-7">
-                <div class="section-header">
+                    <div class="section-header">
                         <h4 class="sub-title">Hubungi Kami</h4>
                         <h2 class="title">LocalBarber</h2>
                     </div>
@@ -458,16 +530,16 @@
                 <!-- /copyright -->
 
                 <!-- footer nav -->
-                <div class="col-md-6">
+                <!-- <div class="col-md-6">
                     <nav class="footer-nav">
                         <a href="index.html">Home</a>
                         <a href="index.html#about">About</a>
-                        <a href="index.html#menu">Menu</a>
+                        <a href="index.html#menu">Pricelist</a>
                         <a href="index.html#reservation">Reservation</a>
                         <a href="index.html#events">Model</a>
                         <a href="index.html#contact">Contact</a>
                     </nav>
-                </div>
+                </div> -->
                 <!-- /footer nav -->
 
             </div>
