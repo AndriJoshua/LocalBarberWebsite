@@ -42,6 +42,7 @@
                             <td><?= esc($reservation['date']) ?></td>
                             <td><?= esc($reservation['time']) ?></td>
                             <td><?= esc($reservation['email']) ?></td>
+                            <td><?= esc($reservation['status'])?></td>
                         </tr>
                     <?php endforeach; ?>
                 <?php else: ?>

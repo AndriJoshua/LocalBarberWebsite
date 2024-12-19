@@ -146,6 +146,7 @@
                     <th>Nomor HP</th>
                     <th>Tanggal</th>
                     <th>Waktu</th>
+                    <th>Status</th>
                     <th>Aksi</th>
                 </tr>
             </thead>
@@ -165,6 +166,16 @@
                 $.get(`${baseUrl}/admin/api/reservations`, function(data) {
                     let rows = "";
                     data.forEach((reservation, index) => {
+                        let statusText = "";
+                        if(reservation.status == 0){
+                            statusText = "Pending";
+                        }
+                        if(reservation.status == 1){
+                            statusText = "Disetujui";
+                        }
+                        if(reservation.status == 2){
+                            statusText = "Done Yak!!"
+                        }
                         rows += `
                             <tr>
                                 <td>${index + 1}</td>
@@ -173,6 +184,7 @@
                                 <td>${reservation.phone}</td>
                                 <td>${reservation.date}</td>
                                 <td>${reservation.time}</td>
+                                <td>${statusText}</td>
                                 <td>
                                     <button class="btn btn-danger btn-sm" onclick="deleteReservation(${reservation.id})">Hapus</button>
                                 </td>

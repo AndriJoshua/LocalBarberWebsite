@@ -146,6 +146,7 @@
                     <th>Nomor HP</th>
                     <th>Tanggal</th>
                     <th>Waktu</th>
+                    <th>Status</th>
                     <th>Aksi</th>
                 </tr>
             </thead>
@@ -163,7 +164,19 @@
             function fetchReservations() {
                 $.get(`${baseUrl}/reservations`, function(data) {
                     let rows = "";
+
                     data.forEach((reservation, index) => {
+                        let statusText = "";
+                        if(reservation.status == 0){
+                            statusText = "Pending";
+                        }
+                        if(reservation.status == 1){
+                            statusText = "Diterina";
+                        }
+                        if(reservation.status == 2){
+                            statusText = "Done Yak!!";
+                        }
+
                         rows += `
                             <tr>
                                 <td>${index + 1}</td>
@@ -171,6 +184,8 @@
                                 <td>${reservation.phone}</td>
                                 <td>${reservation.date}</td>
                                 <td>${reservation.time}</td>
+                                <td>${statusText}</td>
+
                                 <td>
                                     <button class="btn btn-warning btn-sm" onclick="editReservation(${reservation.id})">Edit</button>
                                     <button class="btn btn-danger btn-sm" onclick="deleteReservation(${reservation.id})">Hapus</button>
