@@ -9,10 +9,10 @@ class ReservationApi extends ResourceController
     protected $modelName = 'App\Models\ReservationModel';
     protected $format    = 'json';
 
-    // 1. Get all reservations for the logged-in user
+    // MEngambil reservasi berdasarkan email yang sedang login di akun
     public function index()
     {
-        $email = session()->get('user_email'); // Email from session
+        $email = session()->get('user_email'); 
         if (!$email) {
             return $this->failUnauthorized('Anda harus login untuk melihat data reservasi.');
         }
@@ -21,16 +21,16 @@ class ReservationApi extends ResourceController
         return $this->respond($reservations);
     }
 
-    // 2. Create a new reservation
+    // Membuat reservasi baru
     public function create()
     {
-        $email = session()->get('user_email'); // Email from session
+        $email = session()->get('user_email'); 
         if (!$email) {
             return $this->failUnauthorized('Anda harus login untuk membuat reservasi.');
         }
 
         $data = $this->request->getPost();
-        $data['email'] = $email; // Add the email from session
+        $data['email'] = $email; 
 
         if (!$this->validate([
             'name' => 'required',
@@ -45,7 +45,7 @@ class ReservationApi extends ResourceController
         return $this->respondCreated(['id' => $id, 'message' => 'Reservasi berhasil dibuat']);
     }
 
-    // 3. Update a reservation
+    // update reservasi di halaman user
     public function update($id = null)
     {
         $email = session()->get('user_email'); // Email from session
@@ -73,10 +73,10 @@ class ReservationApi extends ResourceController
         return $this->respond(['message' => 'Reservasi berhasil diperbarui']);
     }
 
-    // 4. Delete a reservation
+    //mengahpus reservasi di halaman reservasi user
     public function delete($id = null)
     {
-        $email = session()->get('user_email'); // Email from session
+        $email = session()->get('user_email'); 
         if (!$email) {
             return $this->failUnauthorized('Anda harus login untuk menghapus reservasi.');
         }

@@ -167,13 +167,13 @@
                     let rows = "";
                     data.forEach((reservation, index) => {
                         let statusText = "";
-                        if(reservation.status == 0){
+                        if (reservation.status == 0) {
                             statusText = "Pending";
                         }
-                        if(reservation.status == 1){
+                        if (reservation.status == 1) {
                             statusText = "Disetujui";
                         }
-                        if(reservation.status == 2){
+                        if (reservation.status == 2) {
                             statusText = "Done Yak!!"
                         }
                         rows += `
@@ -187,6 +187,8 @@
                                 <td>${statusText}</td>
                                 <td>
                                     <button class="btn btn-danger btn-sm" onclick="deleteReservation(${reservation.id})">Hapus</button>
+                                    <button class="btn btn-danger btn-sm" style = "background-color:blue;border-color:blue;" onclick="TerimaReservation(${reservation.id})">Terima</button>
+                                    <button class="btn btn-danger btn-sm" style = "background-color :green;border-color:green;" onclick="SelesaiReservation(${reservation.id})">Selesai</button>
                                 </td>
                             </tr>
                         `;
@@ -208,12 +210,37 @@
                     });
                 }
             };
+            window.TerimaReservation = function(id){
+                if (confirm("Terima Permintaan reservasi ini?")){
+                    $.ajax({
+                        url: `${baseUrl}/admin/api/SetujuReservation/${id}`,
+                        type:"POST",
+                        success: function(){
+                            alert("Reservasi Diterima");
+                            fetchReservations();
+                        }
+                    });
+                }
+            }
+
+            window.SelesaiReservation = function(id){
+                if (confirm("Reservasi ini sudah selesai?")){
+                    $.ajax({
+                        url: `${baseUrl}/admin/api/SelesaiReservation/${id}`,
+                        type: "POST",
+                        success: function(){
+                            alert("Reservasi Selesai");
+                            fetchReservations();
+                        }
+                    });
+                }
+            }
 
             // Fetch reservations on page load
             fetchReservations();
         });
     </script>
-    
+
     <script type="text/javascript" src="<?= base_url('js/jquery.min.js') ?>"></script>
     <script type="text/javascript" src="<?= base_url('js/bootstrap.min.js') ?>"></script>
     <script type="text/javascript" src="<?= base_url('js/owl.carousel.min.js') ?>"></script>

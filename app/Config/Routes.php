@@ -6,7 +6,7 @@ use CodeIgniter\Router\RouteCollection;
 /**
  * @var RouteCollection $routes
  */
-// Rute untuk halaman login
+// Rute untuk halaman login Rencana 2
 //$routes->get('/', 'Login::index');
 //$routes->get('login', 'Login::index');
 //$routes->post('login/authenticate', 'Login::authenticate');
@@ -27,6 +27,7 @@ $routes->get('/UserLogin', 'UserLogin::index');
 //$routes->get('/', 'ImageController::index');
 
 //Routes rencana 3
+
 $routes->get('/', 'test::index');
 $routes->get('test','test::index');
 //$routes->post('/storeuser','AuthController::storeuser');
@@ -41,7 +42,8 @@ $routes->post('/loginuser','AuthController::loginuser');
 $routes->get('/dashboard_user','AuthController::dashboard_user');
 $routes->get('/logout','AuthController::logout');
 $routes->get('/UserLogin', 'UserLogin::index');
-$routes->get('/booking','booking::index');
+
+$routes->get('/booking','booking::index');//<----ini adalah halaman login
 $routes->get('/profile','Profile::index');
 $routes->post('/UpdateUsername','ProfileUpdate::UpdateUsername');
 $routes->post('/updatePhoto','ProfileUpdate::updatePhoto');
@@ -71,9 +73,11 @@ $routes->get('admin/dashboard', function () {
 // Halaman Dashboard Admin
 $routes->get('admin/dashboard', 'AdminController::dashboard');
 
-// API untuk Reservasi
+// API untuk Reservasi pada admin
 $routes->get('admin/api/reservations', 'AdminController::apiReservations');
 $routes->delete('admin/api/reservations/(:num)', 'AdminController::deleteReservation/$1');
+$routes->post('admin/api/SetujuReservation/(:num)', 'AdminController::SetujuReservation/$1');
+$routes->post('admin/api/SelesaiReservation/(:num)', 'AdminController::SelesaiReservation/$1');
 
 
 

@@ -65,4 +65,29 @@ class AdminController extends ResourceController
         }
         return $this->response->setJSON(['error' => 'Failed to delete reservation'], 500);
     }
+
+    public function SetujuReservation($id)
+    {
+        $reservationModel = new ReservationModel();
+        $reservationModel->update($id,['status'=> 1]);
+
+        return $this->response->setJSON([
+            'message' => 'Reservasi di approve',
+            'status' => 1,
+            'success' => true
+        ]);
+    }
+
+    public function SelesaiReservation($id){
+        $reservationModel = new ReservationModel();
+        $reservationModel->update($id,['status'=> 2]);
+        return $this->response->setJSON([
+            'message' => 'Reservasi ditandai selesai',
+            'status' => 2,
+            'success' => true
+        ]);
+    }
+
+
+
 }
