@@ -36,8 +36,6 @@
 		  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 		<![endif]-->
 
-
-
 </head>
 
 <body>
@@ -45,40 +43,39 @@
     <!-- Header -->
     <header id="header">
 
-        <!-- Top nav -->
         <div id="top-nav">
             <div class="container">
 
-                <!-- logo -->
+                
                 <div class="brand-logo" style="color: black;">
                     <i class="fas fa-scissors fa-2x"></i> LocalBarber
                 </div>
-                <!-- logo -->
+                
 
-                <!-- Mobile toggle -->
+              
                 <button class="navbar-toggle">
                     <span></span>
                 </button>
-                <!-- Mobile toggle -->
+                
 
-                <!-- social links -->
+               
                 <ul class="social-nav">
                     <li><a href="#"><i class="fa fa-facebook"></i></a></li>
                     <li><a href="#"><i class="fa fa-twitter"></i></a></li>
                     <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
                 </ul>
-                <!-- /social links -->
+              
 
             </div>
         </div>
-        <!-- /Top nav -->
+       
 
-        <!-- Bottom nav -->
+      
         <div id="bottom-nav">
             <div class="container">
                 <nav id="nav">
 
-                    <!-- nav -->
+          
                     <ul class="main-nav nav navbar-nav">
                         <li><a href="<?= base_url('test') ?>">Home</a></li>
                         <li><a href="<?= base_url('test#about') ?>">About</a></li>
@@ -89,36 +86,34 @@
                         <li><a href="<?= base_url('test#contact') ?>">Contact</a></li>
                     </ul>
 
-                    <!-- /nav -->
+                 
 
-                    <!-- button nav -->
+                 
                     <ul class="cta-nav">
                         <li><a href="<?= base_url('booking'); ?>" class="main-button">Login</a></li>
                     </ul>
-                    <!-- button nav -->
+                   
 
-                    <!-- contact nav -->
+              
                     <ul class="contact-nav nav navbar-nav">
                         <li><a href="tel:0455481497"><i class="fa fa-phone"></i> 0812-2222-2222</a></li>
                         <li><a href="#"><i class="fa fa-map-marker"></i>Jalan Basuki Rahmat</a></li>
                     </ul>
-                    <!-- contact nav -->
+                   
 
                 </nav>
             </div>
         </div>
-        <!-- /Bottom nav -->
-
+   
 
     </header>
-    <!-- /Header -->
+   
 
-    <!-- Home -->
     <div id="home" class="banner-area">
 
-        <!-- Backgound Image -->
+       
         <div class="bg-image bg-parallax overlay" style="background-image:url(./img/background02.jpg)"></div>
-        <!-- /Backgound Image -->
+        
 
         <div class="home-wrapper">
 

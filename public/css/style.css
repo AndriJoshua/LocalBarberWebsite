@@ -1,36 +1,4 @@
-/*
-Template Name: Restaurant HTML Template
-Author: yaminncco
 
-Colors:
-	Body 		: #969696
-	Headers 	: #151515
-	Primary 	: #f36700
-	Grey 		: #F9F9F9 #ECECEC
-
-Fonts: Quicksand, Cabin, Dancing Script
-
-Table OF Contents
-------------------------------------
-1 > General
-2 > Navigation
-3 > Home
-4 > About
-5 > Menu
-6 > Reservation
-7 > Opening
-8 > Events
-9 > Contact
-10 > Footer
-11 > Blog Post
-12 > Responsive
-13 > Preloader
-------------------------------------*/
-
-/*------------------------------------*\
-	General
-\*------------------------------------*/
-/* --- typography --- */
 body {
 	color:#969696;
 	font-size:16px;
