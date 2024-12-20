@@ -179,8 +179,8 @@
 
                         let actionButtons = "";
                         if (reservation.status != 2) {
-                            actionButtons = `<button class="btn btn-warning btn-sm" onclick="editReservation(${reservation.id})">Edit</button>
-                                    <button class="btn btn-danger btn-sm" onclick="deleteReservation(${reservation.id})">Hapus</button>`
+                            actionButtons = `
+                                    <button class="btn btn-danger btn-sm" onclick="deleteReservation(${reservation.id})">Batalkan</button>`
                         }
                         rows += `
                             <tr>
@@ -214,10 +214,7 @@
                 }
             };
 
-            window.editReservation = function(id) {
-                alert("Fitur edit belum diimplementasikan sepenuhnya.");
-            };
-
+            
             fetchReservations();
         });
     </script>
@@ -268,5 +265,7 @@
     <script type="text/javascript" src="<?= base_url('js/owl.carousel.min.js') ?>"></script>
     <script type="text/javascript" src="<?= base_url('js/main.js') ?>"></script>
 </body>
+<!-- Modal Edit Reservation -->
+
 
 </html>

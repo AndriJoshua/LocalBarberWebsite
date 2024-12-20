@@ -202,7 +202,7 @@
                     <!-- Form Ubah Foto Profil -->
                     <form action="<?= base_url('/updatePhoto') ?>" method="POST" enctype="multipart/form-data" style="margin-top: 20px;">
                         <label for="photo">Ubah Foto Profil:</label>
-                        <input type="file" id="photo" name="photo" accept="image/*" required>
+                        <input type="file" style="margin-bottom:5px;" id="photo" name="photo" accept="image/*" required>
                         <button type="submit">Upload</button>
                     </form>
                 </div>
