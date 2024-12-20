@@ -55,7 +55,7 @@
         .table {
             margin-top: 20px;
             border-collapse: collapse;
-            
+
         }
 
         .table th,
@@ -167,16 +167,21 @@
 
                     data.forEach((reservation, index) => {
                         let statusText = "";
-                        if(reservation.status == 0){
+                        if (reservation.status == 0) {
                             statusText = "Pending";
                         }
-                        if(reservation.status == 1){
+                        if (reservation.status == 1) {
                             statusText = "Diterina";
                         }
-                        if(reservation.status == 2){
+                        if (reservation.status == 2) {
                             statusText = "Done Yak!!";
                         }
 
+                        let actionButtons = "";
+                        if (reservation.status != 2) {
+                            actionButtons = `<button class="btn btn-warning btn-sm" onclick="editReservation(${reservation.id})">Edit</button>
+                                    <button class="btn btn-danger btn-sm" onclick="deleteReservation(${reservation.id})">Hapus</button>`
+                        }
                         rows += `
                             <tr>
                                 <td>${index + 1}</td>
@@ -187,8 +192,7 @@
                                 <td>${statusText}</td>
 
                                 <td>
-                                    <button class="btn btn-warning btn-sm" onclick="editReservation(${reservation.id})">Edit</button>
-                                    <button class="btn btn-danger btn-sm" onclick="deleteReservation(${reservation.id})">Hapus</button>
+                                    ${actionButtons};
                                 </td>
                             </tr>
                         `;
