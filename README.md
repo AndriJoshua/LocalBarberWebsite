@@ -1,5 +1,5 @@
 # LocalBarberWebsite
 
-Akun Admin :
-Username : newadmin
-Password : admin123
+## Akun Admin
+- **Username:** newadmin  
+- **Password:** admin123
