@@ -585,6 +585,12 @@
         .bindPopup("<b>Ayo Kesini!!</b><br>Disini Lokasinya.")
         .openPopup();
     z
+
+
+    history.pushState(null, null, location.href);
+    window.onpopstate = function() {
+        history.go(1); // Move forward in the browser history
+    };
 </script>
 
 

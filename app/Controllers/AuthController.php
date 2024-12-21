@@ -68,7 +68,7 @@ class AuthController extends Controller
     public function loginuser()
     {
         $userModel = new UserModel();
-
+        
         // Validasi input
         if (!$this->validate([
             'email' => [
