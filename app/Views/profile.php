@@ -131,11 +131,11 @@
                 <nav id="nav">
                     <ul class="main-nav nav navbar-nav">
                         <li><a href="<?= base_url('dashboard_user') ?>">Home</a></li>
-                        <li><a href="<?= base_url('test#about') ?>">About</a></li>
-                        <li><a href="<?= base_url('test#menu') ?>">Menu</a></li>
-                        <li><a href="<?= base_url('test#reservation') ?>">Reservation</a></li>
-                        <li><a href="<?= base_url('test#events') ?>">Events</a></li>
-                        <li><a href="<?= base_url('test#contact') ?>">Contact</a></li>
+                        <li><a href="<?= base_url('dashboard_user#about') ?>">About</a></li>
+                        <li><a href="<?= base_url('dashboard_user#menu') ?>">Menu</a></li>
+                        <li><a href="<?= base_url('dashboard_user#reservation') ?>">Reservation</a></li>
+                        <li><a href="<?= base_url('dashboard_user#events') ?>">Events</a></li>
+                        <li><a href="<?= base_url('dashboard_user#contact') ?>">Contact</a></li>
                     </ul>
 
                     <!-- User Profile dan Logout -->
