@@ -118,7 +118,7 @@
 
             <div class="col-md-10 col-md-offset-1 text-center">
                 <div class="home-content">
-                    <h1 class="white-text">Selamat Datang Di LocalBarber</h1>
+                    <h1 class="white-text" style="font-family:'Poppins',sans-serif;">Selamat Datang Di LocalBarber</h1>
                     <h4 class="white-text lead" style="font-family:'Poppins',sans-serif;">Tempat terbaik untuk gaya rambut modern,
                         perawatan premium, dan pengalaman santai yang membuat Anda tampil percaya diri setiap hari!</h4>
                     <a href="test#menu"><button class="main-button">Lanjut</button></a>
@@ -142,7 +142,7 @@
                 <!-- section header -->
                 <div class="section-header text-center">
                     <h4 class="sub-title">Tentang Kami</h4>
-                    <h2 class="title">LocalBarber</h2>
+                    <h2 class="title" style="font-family:'Poppins',sans-serif;">LocalBarber</h2>
                 </div>
                 <!-- /section header -->
 
@@ -181,7 +181,7 @@
             <div class="row">
 
                 <div class="section-header text-center">
-                    <h2 class="title white-text">Pricelist</h2>
+                    <h2 class="title white-text" style="font-family:'Poppins',sans-serif;">Pricelist</h2>
                 </div>
 
                 <!-- menu nav -->
@@ -297,7 +297,7 @@
                     <form class="reserve-form row" method="POST" action="<?= base_url('/reservations/store') ?>">
                         <div class="section-header text-center">
                             <h4 class="sub-title">Reservation</h4>
-                            <h2 class="title white-text">Reservasi Sekarang</h2>
+                            <h2 class="title white-text" style="font-family:'Poppins',sans-serif;">Reservasi Sekarang</h2>
                         </div>
 
                         <div class="col-md-6">
@@ -337,36 +337,36 @@
                 <div class="col-md-4 col-md-offset-0 col-sm-10 col-sm-offset-1">
                     <div class="opening-time row">
                         <div class="section-header text-center">
-                            <h2 class="title white-text">Jam Operasional</h2>
+                            <h2 class="title white-text" style="font-family:'Poppins',sans-serif;">Jam Operasional</h2>
                         </div>
                         <ul>
                             <li>
                                 <h4 class="day">Senin</h4>
-                                <h4 class="hours">10:00 am – 7:00 pm</h4>
+                                <h4 class="hours">10:00  – 19:00 </h4>
                             </li>
                             <li>
                                 <h4 class="day">Selasa</h4>
-                                <h4 class="hours">10:00 am – 7:00 pm</h4>
+                                <h4 class="hours">10:00  – 19:00</h4>
                             </li>
                             <li>
                                 <h4 class="day">Rabu</h4>
-                                <h4 class="hours">10:00 am – 7:00 pm</h4>
+                                <h4 class="hours">10:00  – 19:00</h4>
                             </li>
                             <li>
                                 <h4 class="day">Kamis</h4>
-                                <h4 class="hours">10:00 am – 7:00 pm</h4>
+                                <h4 class="hours">10:00  – 19:00</h4>
                             </li>
                             <li>
                                 <h4 class="day">Jumat</h4>
-                                <h4 class="hours">10:00 am – 7:00 pm</h4>
+                                <h4 class="hours">10:00  – 19:00</h4>
                             </li>
                             <li>
                                 <h4 class="day">Sabtu</h4>
-                                <h4 class="hours">1:00 pm – 7:00 pm</h4>
+                                <h4 class="hours">13:00  – 19:00</h4>
                             </li>
                             <li>
                                 <h4 class="day">Minggu</h4>
-                                <h4 class="hours">1:00 pm – 7:00 pm</h4>
+                                <h4 class="hours">13:00  – 19:00</h4>
                             </li>
                         </ul>
                     </div>
@@ -399,7 +399,7 @@
         <!-- section header -->
         <div class="section-header text-center">
             <h4 class="sub-title">Jelajahi</h4>
-            <h2 class="title white-text">Model Rambut</h2>
+            <h2 class="title white-text" style="font-family:'Poppins',sans-serif;">Model Rambut</h2>
         </div>
         <!-- /section header -->
 
@@ -468,7 +468,7 @@
                 <div class="col-md-5 col-md-offset-7">
                     <div class="section-header">
                         <h4 class="sub-title">Hubungi Kami</h4>
-                        <h2 class="title">LocalBarber</h2>
+                        <h2 class="title" style="font-family:'Poppins',sans-serif;">LocalBarber</h2>
                     </div>
                     <div class="contact-content">
                         <p>Sejak 2017, Local Barber telah menjadi barbershop pilihan dengan layanan profesional, potongan modern, dan pengalaman nyaman untuk pria yang ingin tampil percaya diri.</p>
@@ -513,7 +513,7 @@
                 <!-- copyright -->
                 <div class="col-md-6">
                     <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                    <span class="copyright">Copyright @2024 All rights reserved | LocalBarber Web <a href="#" target="_blank" style="color: blue;">Kelompok Barber 4</a></span>
+                    <span class="copyright">Copyright @2024 All rights reserved | LocalBarber Web <a href="#" target="_blank" style="color:orangered;">Kelompok Barber 4</a></span>
                     <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                 </div>
                 <!-- /copyright -->
